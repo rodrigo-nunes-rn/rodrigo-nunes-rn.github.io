@@ -1,56 +1,56 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-    header, footer {
-      background-color: black;
-      padding: 10px 0;
-    }
-    nav ul, footer ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-    }
-    nav ul li, footer ul li {
-      margin: 0 15px;
-    }
-    nav ul li a, footer ul li a {
-      color: white;
-      text-decoration: none;
-    }
-    footer {
-      display: flex;
-      justify-content: space-around;
-    }
-    footer ul {
-      flex-direction: column;
-    }
-    .jumping-square {
-      width: 50px;
-      height: 50px;
-      background-color: red;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      animation: jump 1s infinite;
-    }
-    @keyframes jump {
-      0%, 100% {
-        transform: translate(-50%, -50%) translateY(0);
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
       }
-      50% {
-        transform: translate(-50%, -50%) translateY(-100px);
+      
+      nav ul, footer ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
       }
-    }
-  </style>
-</head>
+      nav ul li, footer ul li {
+        margin: 0 15px;
+      }
+      nav ul li a, footer ul li a {
+        color: white;
+        text-decoration: none;
+      }
+      footer {
+        display: flex;
+        justify-content: space-around;
+      }
+      footer ul {
+        flex-direction: row;
+        gap: 50px;
+      }
+      .jumping-square {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        margin: auto auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: jump 1s infinite;
+      }
+      @keyframes jump {
+        0%, 100% {
+          transform: translate(-50%, -50%) translateY(0);
+        }
+        50% {
+          transform: translate(-50%, -50%) translateY(-100px);
+        }
+      }
+    </style>
+  </head>
 <body>
 
 <header>
@@ -74,6 +74,16 @@
 
 <div class="jumping-square"></div>
 
+  <style>
+        footer {
+      display: flex;
+      justify-content: space-around;
+    }
+    footer ul {
+      flex-direction: row;
+      gap: 50px;
+    }
+  </style>
   <footer>
     <ul>
       <li><a href="/index.html">Home</a></li>
