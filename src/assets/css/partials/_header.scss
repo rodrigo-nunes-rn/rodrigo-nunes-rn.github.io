@@ -1,0 +1,31 @@
+
+header {
+    background-color: green;
+    width: 300px;
+    @media #{$medium} {
+        width: 600px;
+    }
+
+    nav {
+        background-color: blue;
+        ul {
+            background-color: red;
+            li {
+                background-color: yellow;
+            }
+        }
+    }
+}
+
+.btn {
+    font-size: 40px;
+    border: 1px solid black;
+    border-radius: 100px;
+    padding: 2px 10px;
+}
+
+.btn-2 {
+    @extend .btn;
+    background-color: tomato;
+}
+

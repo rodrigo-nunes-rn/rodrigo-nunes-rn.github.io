@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
 @import 
+        "partials/mixins",
+        "partials/mediaqueries",
         "partials/header",
         "partials/content",
         "partials/footer";

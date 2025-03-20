@@ -1,11 +1,1 @@
-header {
-  background-color: green;
-}
-
-body {
-  background-color: pink;
-}
-
-footer {
-  background-color: purple;
-}
+header{background-color:green;width:300px}@media (min-width:600px){header{width:600px}}header nav{background-color:blue}header nav ul{background-color:red}header nav ul li{background-color:yellow}.btn,.btn-2{font-size:40px;border:1px solid black;border-radius:100px;padding:2px 10px}.btn-2{background-color:tomato}body{background-color:pink}footer{background-color:purple}
